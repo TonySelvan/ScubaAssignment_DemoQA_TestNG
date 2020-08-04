@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+  <reporter-output>
+    <line>
+      <![CDATA[05-Aug-2020 12:05:09 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 12:05:15 AM : <a target=_blank href=screenshots/screenshot_2.png>Parabank Site loaded : Login screen  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 12:05:17 AM : <a target=_blank href=screenshots/screenshot_3.png>Parabank Site : New User Registration Values are Entered  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 12:05:23 AM : <a target=_blank href=screenshots/screenshot_4.png>Parabank Site logged in : New user registered with ID thamarai383; Password: thamarai  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 12:05:30 AM : <a target=_blank href=screenshots/screenshot_5.png>Parabank Site logged out after creating registering a new user  </a>]]>
+    </line>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="36183" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:31 GMT+05:30">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="36183" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:31 GMT+05:30">
+      <class name="com.maveric.scuba.tests.parabank.ParaBank_TestNG">
+        <test-method status="PASS" signature="Register_User()[pri:0, instance:com.maveric.scuba.tests.parabank.ParaBank_TestNG@4e096385]" name="Register_User" duration-ms="34920" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:30 GMT+05:30">
+          <reporter-output>
+            <line>
+              <![CDATA[05-Aug-2020 12:05:09 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 12:05:15 AM : <a target=_blank href=screenshots/screenshot_2.png>Parabank Site loaded : Login screen  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 12:05:17 AM : <a target=_blank href=screenshots/screenshot_3.png>Parabank Site : New User Registration Values are Entered  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 12:05:23 AM : <a target=_blank href=screenshots/screenshot_4.png>Parabank Site logged in : New user registered with ID thamarai383; Password: thamarai  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 12:05:30 AM : <a target=_blank href=screenshots/screenshot_5.png>Parabank Site logged out after creating registering a new user  </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- Register_User -->
+      </class> <!-- com.maveric.scuba.tests.parabank.ParaBank_TestNG -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>
