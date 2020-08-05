@@ -5,6 +5,8 @@ import java.util.Random;
 import java.util.concurrent.TimeUnit;
 
 import org.apache.commons.lang.RandomStringUtils;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 import org.apache.poi.sl.usermodel.Sheet;
 import org.apache.poi.xssf.usermodel.XSSFWorkbook;
 import org.openqa.selenium.By;
@@ -33,12 +35,16 @@ public class Scubautils extends WebActions{
 	public  String ExcelPath = ".\\TestData\\parabank.xlsx";
 	public  String SheetName = "TestData";
 	public  Sheet sheet;
+	
+	Logger logger = LogManager.getLogger();
 
 	public void driverinitialize()
 	{
 		driver = Driver.getWebDriver();
+		wait = new WebDriverWait(driver, 60);
 		driver.manage().window().maximize();
 		driver.manage().timeouts().implicitlyWait(60, TimeUnit.SECONDS);
+		logger.info("Driver Is Launched and Maximized");
 	}
 	
 	public void urllaunch(String url)
@@ -58,15 +64,17 @@ public class Scubautils extends WebActions{
 	{
 		try
 		{
-//			wait.until(ExpectedConditions.visibilityOf((WebElement) loc ));
 			WebElement ele = driver.findElement(loc);
+			wait.until(ExpectedConditions.visibilityOf(ele));
 			ele.clear();
 			ele.sendKeys(value);
+			logger.info("User Set the Value " + value + " in " + loc );
 		}
 		catch (Exception e) {
 	// TODO: handle exception
 			String exception = e.getMessage();
 			System.out.println(exception);
+			logger.warn("User Couldn't Set the Value " + value.toUpperCase() + " in " + loc + "And the Exception Message is " + exception );
 		}
 //		logScreenshot("Value " + value + "is set in " + loc );
 	}
@@ -76,9 +84,10 @@ public class Scubautils extends WebActions{
 		try
 		{
 			Thread.sleep(5000);
-//			wait.until(ExpectedConditions.visibilityOfElementLocated(loc));
+			wait.until(ExpectedConditions.elementToBeClickable(loc));
 			WebElement ele = driver.findElement(loc);
 			ele.click();
+			logger.info("User Clicked the " + loc );
 		}
 		catch (Exception e) {
 	// TODO: handle exception
@@ -86,10 +95,10 @@ public class Scubautils extends WebActions{
 //            js.executeScript("arguments[0].click();",ele );
 			String exception = e.getMessage();
 			e.printStackTrace();
-			System.out.println("exception" + exception);
 			WebElement element = driver.findElement(loc);
 			Actions actions = new Actions(driver);
 			actions.moveToElement(element).click().perform();
+			logger.warn("User Couldn't click on " + loc + "And the Exception Message is " + exception );
 		}
 	}
 	
