@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+    <line>
+      <![CDATA[05-Aug-2020 09:58:35 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:58:36 AM : <a target=_blank href=screenshots/screenshot_2.png>Sheet  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:58:49 AM : <a target=_blank href=screenshots/screenshot_3.png>UrlLaunch  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:58:49 AM : <a target=_blank href=screenshots/screenshot_4.png>Practice Form is Launched  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:59:17 AM : <a target=_blank href=screenshots/screenshot_5.png>All the values are Set  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:59:28 AM : <a target=_blank href=screenshots/screenshot_6.png>Form is Created Successfully  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:59:49 AM : <a target=_blank href=screenshots/screenshot_7.png>UrlLaunch  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 09:59:50 AM : <a target=_blank href=screenshots/screenshot_8.png>DemoQA Login Page is launched  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 10:00:06 AM : <a target=_blank href=screenshots/screenshot_9.png>BookStore is Launched  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 10:00:22 AM : <a target=_blank href=screenshots/screenshot_10.png>Book is Added to the Collection  </a>]]>
+    </line>
+    <line>
+      <![CDATA[05-Aug-2020 10:00:46 AM : <a target=_blank href=screenshots/screenshot_11.png>All Books are deleted  </a>]]>
+    </line>
+  </reporter-output>
+  <suite name="DemoQA" duration-ms="151425" started-at="2020-08-05T09:58:21 GMT+05:30" finished-at="2020-08-05T10:00:52 GMT+05:30">
+    <groups>
+    </groups>
+    <test name="DemoQA Assignment" duration-ms="151425" started-at="2020-08-05T09:58:21 GMT+05:30" finished-at="2020-08-05T10:00:52 GMT+05:30">
+      <class name="com.maveric.scuba.tests.demoqa.Demoqa">
+        <test-method status="PASS" signature="AllElements()[pri:0, instance:com.maveric.scuba.tests.demoqa.Demoqa@623a8092]" name="AllElements" duration-ms="14825" started-at="2020-08-05T09:58:21 GMT+05:30" finished-at="2020-08-05T09:58:36 GMT+05:30">
+          <reporter-output>
+            <line>
+              <![CDATA[05-Aug-2020 09:58:35 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 09:58:36 AM : <a target=_blank href=screenshots/screenshot_2.png>Sheet  </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- AllElements -->
+        <test-method status="PASS" signature="ProfileForm()[pri:1, instance:com.maveric.scuba.tests.demoqa.Demoqa@623a8092]" name="ProfileForm" duration-ms="56017" started-at="2020-08-05T09:58:37 GMT+05:30" finished-at="2020-08-05T09:59:33 GMT+05:30">
+          <reporter-output>
+            <line>
+              <![CDATA[05-Aug-2020 09:58:49 AM : <a target=_blank href=screenshots/screenshot_3.png>UrlLaunch  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 09:58:49 AM : <a target=_blank href=screenshots/screenshot_4.png>Practice Form is Launched  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 09:59:17 AM : <a target=_blank href=screenshots/screenshot_5.png>All the values are Set  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 09:59:28 AM : <a target=_blank href=screenshots/screenshot_6.png>Form is Created Successfully  </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- ProfileForm -->
+        <test-method status="PASS" signature="BookStore()[pri:2, instance:com.maveric.scuba.tests.demoqa.Demoqa@623a8092]" name="BookStore" duration-ms="77040" started-at="2020-08-05T09:59:34 GMT+05:30" finished-at="2020-08-05T10:00:51 GMT+05:30">
+          <reporter-output>
+            <line>
+              <![CDATA[05-Aug-2020 09:59:49 AM : <a target=_blank href=screenshots/screenshot_7.png>UrlLaunch  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 09:59:50 AM : <a target=_blank href=screenshots/screenshot_8.png>DemoQA Login Page is launched  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 10:00:06 AM : <a target=_blank href=screenshots/screenshot_9.png>BookStore is Launched  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 10:00:22 AM : <a target=_blank href=screenshots/screenshot_10.png>Book is Added to the Collection  </a>]]>
+            </line>
+            <line>
+              <![CDATA[05-Aug-2020 10:00:46 AM : <a target=_blank href=screenshots/screenshot_11.png>All Books are deleted  </a>]]>
+            </line>
+          </reporter-output>
+        </test-method> <!-- BookStore -->
+      </class> <!-- com.maveric.scuba.tests.demoqa.Demoqa -->
+    </test> <!-- DemoQA Assignment -->
+  </suite> <!-- DemoQA -->
+</testng-results>

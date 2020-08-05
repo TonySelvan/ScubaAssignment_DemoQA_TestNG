@@ -936,3 +936,13 @@ Session ID: ba60da73fa6ebfd80814a2801bc3ffd2
 2020-08-05 02:40:13.197 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
 2020-08-05 02:40:19.182 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
 2020-08-05 02:41:26.627 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-08-05 09:58:19.409 [main] INFO  com.maveric.core.testng.listeners.ReportListener - reports folder created successfully :./reports/test-output-05_Aug_2020_09_58_19_AM
+2020-08-05 09:58:21.175 [main] INFO  com.maveric.core.testng.listeners.TestListener - Thread Count : 1
+2020-08-05 09:58:21.176 [main] INFO  com.maveric.core.testng.listeners.TestListener - Data Provider Count : 1
+2020-08-05 09:58:21.176 [main] INFO  com.maveric.core.testng.listeners.TestListener - Parallel Type : Methods
+2020-08-05 09:58:28.487 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-08-05 09:58:37.274 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-08-05 09:58:43.092 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-08-05 09:59:34.431 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-08-05 09:59:40.223 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-08-05 10:00:52.600 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
