@@ -140,7 +140,8 @@ public class pageobjects {
 //	    public static By fklkf = By.xpath("//button[text()='Add To Your Collection']"); 
 	    public static By AddCollection = By.xpath("//button[text()='Add To Your Collection']");
 	    public static     By Search_book = By.id("searchBox");
-	    public static    By Goto_BookStore = By.xpath("//button[text()='Go To Book Store']");
+	    public static    By Goto_BookStore = By.id("gotoStore");
+//	    public static    By Goto_BookStore = By.xpath("//button[text()='Go To Book Store']");
 	    public static    By Delete_Allbooks = By.xpath("//button[text()='Delete All Books']");
 	    public static By Delete_Confirm = By.id("closeSmallModal-ok");
 	    public static    By Delete_Account = By.xpath("//button[text()='Delete Account']");
