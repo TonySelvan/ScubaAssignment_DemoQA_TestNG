@@ -346,7 +346,8 @@ public class Scubautils extends WebActions{
 		send(pageobjects.Password, "Maveric@123");
 		Btnclick(pageobjects.Login_Submit);
 		Thread.sleep(5000);
-		Btnclick(pageobjects.Goto_BookStore);
+		driver.navigate().to("https://demoqa.com/books");
+//		Btnclick(pageobjects.Goto_BookStore);
 		logScreenshot("BookStore is Launched");
 		Btnclick(pageobjects.BookName);
 		Btnclick(pageobjects.AddCollection);

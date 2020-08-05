@@ -45,7 +45,7 @@ public  void BookStore() throws InterruptedException
 	Utils.BookStoreApp();
 }
 
-@Test
+//@Test
 public void AllElements()
 {
 	Method.login();
