@@ -84,8 +84,8 @@ public class Scubautils extends WebActions{
 		try
 		{
 			Thread.sleep(5000);
-			wait.until(ExpectedConditions.elementToBeClickable(loc));
 			WebElement ele = driver.findElement(loc);
+			wait.until(ExpectedConditions.elementToBeClickable(ele));
 			ele.click();
 			logger.info("User Clicked the " + loc );
 		}
@@ -95,9 +95,9 @@ public class Scubautils extends WebActions{
 //            js.executeScript("arguments[0].click();",ele );
 			String exception = e.getMessage();
 			e.printStackTrace();
-			WebElement element = driver.findElement(loc);
+//			WebElement element = driver.findElement(loc);
 			Actions actions = new Actions(driver);
-			actions.moveToElement(element).click().perform();
+			actions.moveToElement(ele).click().perform();
 			logger.warn("User Couldn't click on " + loc + "And the Exception Message is " + exception );
 		}
 	}
