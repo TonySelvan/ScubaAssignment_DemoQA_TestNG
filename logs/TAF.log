@@ -994,3 +994,20 @@ Session ID: ba60da73fa6ebfd80814a2801bc3ffd2
 2020-08-05 18:15:16.990 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.id: closeSmallModal-ok
 2020-08-05 18:15:24.620 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.id: submit
 2020-08-05 18:15:25.895 [TestNG-test=DemoQA Assignment-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed
+2020-08-07 12:57:04.793 [main] INFO  com.maveric.core.testng.listeners.ReportListener - reports folder created successfully :./reports/test-output-07_Aug_2020_12_57_04_PM
+2020-08-07 12:57:07.962 [main] INFO  com.maveric.core.testng.listeners.TestListener - Thread Count : 1
+2020-08-07 12:57:07.963 [main] INFO  com.maveric.core.testng.listeners.TestListener - Data Provider Count : 1
+2020-08-07 12:57:07.963 [main] INFO  com.maveric.core.testng.listeners.TestListener - Parallel Type : Methods
+2020-08-07 12:57:15.246 [TestNG-test=Default test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Setup Completed
+2020-08-07 12:57:17.418 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - Driver Is Launched and Maximized
+2020-08-07 12:57:21.058 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Set the Value ThamaraiSelvan in By.id: userName
+2020-08-07 12:57:21.210 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Set the Value Maveric@123 in By.id: password
+2020-08-07 12:57:26.307 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.xpath: //button[text()='Login']
+2020-08-07 12:57:38.281 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.id: see-book-Git Pocket Guide
+2020-08-07 12:57:43.377 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.xpath: //button[text()='Add To Your Collection']
+2020-08-07 12:57:53.928 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.xpath: //span[text()='Login']
+2020-08-07 12:57:59.666 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.linkText: profile
+2020-08-07 12:58:04.817 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.xpath: //button[text()='Delete All Books']
+2020-08-07 12:58:09.925 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.id: closeSmallModal-ok
+2020-08-07 12:58:17.561 [TestNG-test=Default test-1] INFO  com.maveric.scuba.utils.Scubautils - User Clicked the By.id: submit
+2020-08-07 12:58:18.648 [TestNG-test=Default test-1] INFO  com.maveric.core.testng.listeners.DriverListener - Driver Quit Completed

@@ -1,47 +1,47 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
+<testng-results skipped="0" failed="0" ignored="1" total="2" passed="1">
   <reporter-output>
     <line>
-      <![CDATA[05-Aug-2020 12:05:09 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+      <![CDATA[07-Aug-2020 12:57:20 PM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
     </line>
     <line>
-      <![CDATA[05-Aug-2020 12:05:15 AM : <a target=_blank href=screenshots/screenshot_2.png>Parabank Site loaded : Login screen  </a>]]>
+      <![CDATA[07-Aug-2020 12:57:20 PM : <a target=_blank href=screenshots/screenshot_2.png>DemoQA Login Page is launched  </a>]]>
     </line>
     <line>
-      <![CDATA[05-Aug-2020 12:05:17 AM : <a target=_blank href=screenshots/screenshot_3.png>Parabank Site : New User Registration Values are Entered  </a>]]>
+      <![CDATA[07-Aug-2020 12:57:32 PM : <a target=_blank href=screenshots/screenshot_3.png>BookStore is Launched  </a>]]>
     </line>
     <line>
-      <![CDATA[05-Aug-2020 12:05:23 AM : <a target=_blank href=screenshots/screenshot_4.png>Parabank Site logged in : New user registered with ID thamarai383; Password: thamarai  </a>]]>
+      <![CDATA[07-Aug-2020 12:57:48 PM : <a target=_blank href=screenshots/screenshot_4.png>Book is Added to the Collection  </a>]]>
     </line>
     <line>
-      <![CDATA[05-Aug-2020 12:05:30 AM : <a target=_blank href=screenshots/screenshot_5.png>Parabank Site logged out after creating registering a new user  </a>]]>
+      <![CDATA[07-Aug-2020 12:58:12 PM : <a target=_blank href=screenshots/screenshot_5.png>All Books are deleted  </a>]]>
     </line>
   </reporter-output>
-  <suite name="Default suite" duration-ms="36183" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:31 GMT+05:30">
+  <suite name="Default suite" duration-ms="70686" started-at="2020-08-07T12:57:07 GMT+05:30" finished-at="2020-08-07T12:58:18 GMT+05:30">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="36183" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:31 GMT+05:30">
-      <class name="com.maveric.scuba.tests.parabank.ParaBank_TestNG">
-        <test-method status="PASS" signature="Register_User()[pri:0, instance:com.maveric.scuba.tests.parabank.ParaBank_TestNG@4e096385]" name="Register_User" duration-ms="34920" started-at="2020-08-05T00:04:55 GMT+05:30" finished-at="2020-08-05T00:05:30 GMT+05:30">
+    <test name="Default test" duration-ms="70686" started-at="2020-08-07T12:57:07 GMT+05:30" finished-at="2020-08-07T12:58:18 GMT+05:30">
+      <class name="com.maveric.scuba.tests.demoqa.Demoqa">
+        <test-method status="PASS" signature="BookStore()[pri:2, instance:com.maveric.scuba.tests.demoqa.Demoqa@2bfc268b]" name="BookStore" duration-ms="69548" started-at="2020-08-07T12:57:08 GMT+05:30" finished-at="2020-08-07T12:58:17 GMT+05:30">
           <reporter-output>
             <line>
-              <![CDATA[05-Aug-2020 12:05:09 AM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
+              <![CDATA[07-Aug-2020 12:57:20 PM : <a target=_blank href=screenshots/screenshot_1.png>UrlLaunch  </a>]]>
             </line>
             <line>
-              <![CDATA[05-Aug-2020 12:05:15 AM : <a target=_blank href=screenshots/screenshot_2.png>Parabank Site loaded : Login screen  </a>]]>
+              <![CDATA[07-Aug-2020 12:57:20 PM : <a target=_blank href=screenshots/screenshot_2.png>DemoQA Login Page is launched  </a>]]>
             </line>
             <line>
-              <![CDATA[05-Aug-2020 12:05:17 AM : <a target=_blank href=screenshots/screenshot_3.png>Parabank Site : New User Registration Values are Entered  </a>]]>
+              <![CDATA[07-Aug-2020 12:57:32 PM : <a target=_blank href=screenshots/screenshot_3.png>BookStore is Launched  </a>]]>
             </line>
             <line>
-              <![CDATA[05-Aug-2020 12:05:23 AM : <a target=_blank href=screenshots/screenshot_4.png>Parabank Site logged in : New user registered with ID thamarai383; Password: thamarai  </a>]]>
+              <![CDATA[07-Aug-2020 12:57:48 PM : <a target=_blank href=screenshots/screenshot_4.png>Book is Added to the Collection  </a>]]>
             </line>
             <line>
-              <![CDATA[05-Aug-2020 12:05:30 AM : <a target=_blank href=screenshots/screenshot_5.png>Parabank Site logged out after creating registering a new user  </a>]]>
+              <![CDATA[07-Aug-2020 12:58:12 PM : <a target=_blank href=screenshots/screenshot_5.png>All Books are deleted  </a>]]>
             </line>
           </reporter-output>
-        </test-method> <!-- Register_User -->
-      </class> <!-- com.maveric.scuba.tests.parabank.ParaBank_TestNG -->
+        </test-method> <!-- BookStore -->
+      </class> <!-- com.maveric.scuba.tests.demoqa.Demoqa -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>
