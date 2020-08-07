@@ -361,7 +361,7 @@ public class Scubautils extends WebActions{
 		Thread.sleep(2000);
 		alertok();
 		logScreenshot("All Books are deleted");
-		Btnclick(pageobjects.Logout);		
+		Btnclick(pageobjects.Logout);
 	}
 	
 ////////////////////////////Element Level Functions///////////////////////	

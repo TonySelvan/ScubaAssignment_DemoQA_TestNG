@@ -138,7 +138,8 @@ public class pageobjects {
 	    public static    By Login_Submit = By.xpath("//button[text()='Login']");
 	    public static By BookName = By.id("see-book-Git Pocket Guide");
 //	    public static By fklkf = By.xpath("//button[text()='Add To Your Collection']"); 
-	    public static By AddCollection = By.xpath("//button[text()='Add To Your Collection']");
+//	    public static By AddCollection = By.xpath("//button[text()='Add To Your Collection']");
+	    public static By AddCollection = By.id("addNewRecordButton");
 	    public static     By Search_book = By.id("searchBox");
 	    public static    By Goto_BookStore = By.id("gotoStore");
 //	    public static    By Goto_BookStore = By.xpath("//button[text()='Go To Book Store']");
