@@ -9,6 +9,7 @@ import org.openqa.selenium.WebElement;
 import org.testng.Assert;
 
 import com.maveric.core.driver.Driver;
+import com.maveric.core.utils.data.Database;
 import com.maveric.core.utils.web.WebActions;
 import com.maveric.core.utils.web.WebActions;
 import com.maveric.scuba.utils.Scubautils;
@@ -18,7 +19,7 @@ import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
 import io.cucumber.java.en.When;
 
-public class ParaBank{
+public class ParaBankWithDB{
 	
 	Scubautils Utils = new Scubautils();
 	WebActions Act = new WebActions();
@@ -26,11 +27,13 @@ public class ParaBank{
 	ParabankPage page = new ParabankPage();
 	Logger logger = LogManager.getLogger();
 	
+	Database Db = new Database("mysql","root","sowmika18","localhost","3306","parabank");
+	
 	String newAccountNumber = "";
 	String firstAccount = "";
 	String UserName = "";
 	
-	@Given("^User Launch the Parabank Application$")
+	@Given("^User Launch the Parabank Application Using DB$")
 	public void launch()
 	{
 		WebDriver driver = Driver.getWebDriver();
@@ -38,39 +41,40 @@ public class ParaBank{
 		Utils.urllaunch(Prop.readProp("url"));
 	}
 	
-	@Given("^Register The User$")
-	public void User_Registration()
+	@When("^Register The User Using DB$")
+	public void User_Registration() throws InterruptedException
 	{
-		WebDriver driver = Driver.getWebDriver();
-		UserName = Prop.readProp("userName") + Utils.randomNumber(1200);
+//		WebDriver driver = Driver.getWebDriver();
+		UserName = Db.readValue("Select * from parabank","userName",1) + Utils.randomNumber(1200);
 		Utils.Btnclick(page.RegisterLink);
+		Thread.sleep(5000);
 		Utils.logScreenshot("Parabank Site loaded : Login screen");
-		Utils.send(page.FirstName, Prop.readProp("FirstName"));
-		Utils.send(page.LastName, Prop.readProp("LastName"));
-		Utils.send(page.Address, Prop.readProp("Address"));
-		Utils.send(page.City, Prop.readProp("City"));
-		Utils.send(page.State, Prop.readProp("State"));
-		Utils.send(page.Zip, Prop.readProp("Zip"));
-		Utils.send(page.Phone, Prop.readProp("Phone"));
-		Utils.send(page.SSN, Prop.readProp("SSN"));
+		Utils.send(page.FirstName, Db.readValue("Select * from parabank","FirstName",1));
+		Utils.send(page.LastName, Db.readValue("Select * from parabank","LastName",1));
+		Utils.send(page.Address, Db.readValue("Select * from parabank","Address",1));
+		Utils.send(page.City, Db.readValue("Select * from parabank","City",1));
+		Utils.send(page.State, Db.readValue("Select * from parabank","State",1));
+		Utils.send(page.Zip, Db.readValue("Select * from parabank","Zip",1));
+		Utils.send(page.Phone, Db.readValue("Select * from parabank","Phone",1));
+		Utils.send(page.SSN, Db.readValue("Select * from parabank","SSN",1));
 		Utils.send(page.UserName, UserName);
-		Utils.send(page.Password, Prop.readProp("password"));
-		Utils.send(page.ConfirmPassword, Prop.readProp("password"));
+		Utils.send(page.Password, Db.readValue("Select * from parabank","password",1));
+		Utils.send(page.ConfirmPassword, Db.readValue("Select * from parabank","password",1));
 		Utils.logScreenshot("Parabank Site : New User Registration Values are Entered");
 		Utils.Btnclick(page.RegisterButton);
 		Utils.waitVisible(page.CreationSuccess);
-		Utils.logScreenshot(String.format("Parabank Site logged in : New user registered with ID %s; Password: %s", UserName, Prop.readProp("password")));
+		Utils.logScreenshot(String.format("Parabank Site logged in : New user registered with ID %s; Password: %s", UserName, Db.readValue("Select * from parabank","password",1)));
 		Utils.Btnclick(page.LogoutLink);
 		Utils.waitVisible(page.UserNameTextBox);
 		Utils.logScreenshot("Parabank Site logged out after creating registering a new user");
 	}
 	
 	//Login
-		@When("^The user should be able to login into Parabank$")
+		@Then("^The user should be able to login into Parabank Using DB$")
 		public void login(){
 			
 			Utils.send(page.UserNameTextBox, UserName);
-			Utils.send(page.PasswordTextBox, Prop.readProp("password"));	
+			Utils.send(page.PasswordTextBox, Db.readValue("Select * from parabank","password",1));	
 //			screenshot
 			Utils.logScreenshot("Credentials entered");		
 			Utils.Btnclick(page.LogInButton);
@@ -87,7 +91,7 @@ public class ParaBank{
 		}
 		
 		//Account creation
-		@Then("^The user should be able to Create a new Account$")
+		@Then("^The user should be able to Create a new Account Using DB$")
 		public void createAccount(){
 			Utils.Btnclick(page.OpenAccountLink);
 			Utils.waitVisible(page.AccountTypeDropDown);
@@ -108,7 +112,7 @@ public class ParaBank{
 		}
 		
 		//Transfer
-		@And("^The user should be able to transferFunds from one accont to another$")
+		@Then("^The user should be able to transferFunds from one accont to another Using DB$")
 		public void transferFunds() throws Throwable{
 			Utils.Btnclick(page.TransferFundsLink);
 			Utils.waitVisible(page.ToAccountDropDown);
@@ -125,7 +129,7 @@ public class ParaBank{
 		}
 		
 		//view txn
-		@And("^The user should be able to view the list of accounts$")
+		@Then("^The user should be able to view the list of accounts Using DB$")
 		public void viewAccount() {
 			Utils.Btnclick(page.AccountsOverviewLink);
 			Utils.waitVisible(page.AccountTableRows);

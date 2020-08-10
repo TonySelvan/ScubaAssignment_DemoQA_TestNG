@@ -137,11 +137,11 @@ public class pageobjects {
 	    public static    By Password = By.id("password");
 	    public static    By Login_Submit = By.xpath("//button[text()='Login']");
 	    public static By BookName = By.id("see-book-Git Pocket Guide");
-	    public static By AddCollection = By.xpath("//button[text()='Add To Your Collection']");
-//	    public static By AddCollection = By.id("addNewRecordButton");
+//	    public static By fklkf = By.xpath("//button[text()='Add To Your Collection']"); 
+//	    public static By AddCollection = By.xpath("//button[text()='Add To Your Collection']");
+	    public static By AddCollection = By.xpath("/html/body/div/div/div/div[2]/div[2]/div[1]/div[2]/div[9]/div[2]/button");
 	    public static     By Search_book = By.id("searchBox");
-	    public static    By Goto_BookStore = By.id("gotoStore");
-//	    public static    By Goto_BookStore = By.xpath("//button[text()='Go To Book Store']");
+	    public static    By Goto_BookStore = By.xpath("//button[text()='Go To Book Store']");
 	    public static    By Delete_Allbooks = By.xpath("//button[text()='Delete All Books']");
 	    public static By Delete_Confirm = By.id("closeSmallModal-ok");
 	    public static    By Delete_Account = By.xpath("//button[text()='Delete Account']");
