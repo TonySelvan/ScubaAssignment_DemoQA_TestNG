@@ -37,7 +37,7 @@ public  void ProfileForm() throws InterruptedException {
 	Utils.profileformfilling();
 }
 	
-@Test(priority = 2)
+//@Test(priority = 2)
 public  void BookStore() throws InterruptedException
 {
 	Utils.driverinitialize();
